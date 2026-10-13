@@ -1,0 +1,12 @@
+node_modules/
+.DS_Store
+.openai/*.tar.gz
+.openai/*.tgz
+research/metrics/raw/
+research/editorial/raw/
+vendor/
+.openai/
+research/architecture/raw/
+research/visual/*.png
+research/visual/*-checks.json
+research/visual/*.log
