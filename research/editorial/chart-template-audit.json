@@ -1,0 +1,175 @@
+{
+  "skill": "anyps5-story/vendor/lieflat/SKILL.md",
+  "catalog": "anyps5-story/vendor/lieflat/catalog.md",
+  "palette": {
+    "name": "MONO.DARK",
+    "source": "anyps5-story/vendor/lieflat/mono-tokens.js",
+    "roles": {
+      "background": "#1C1C1A",
+      "ink": "#F0EFEB",
+      "muted": "#8F8E88",
+      "faint": "#55554F",
+      "grid": "#2E2D29",
+      "ladder": ["#F0EFEB", "#DCDAD2", "#C9C7BD", "#B3B0A4", "#8F8E88", "#6A6963", "#4A4944"]
+    },
+    "notes": "The parent page requested a dark monochrome treatment. All chart marks use only the Lieflat dark gray ladder; green and all other hues are absent."
+  },
+  "implementation": "anyps5-story/dist/charts.js",
+  "template_notes": "The catalog calls the barcode L3, while its actual card and render block in lupi-gallery.html are numbered 2. The card title and implementation match, so the chart uses that actual source block and documents the numbering mismatch here.",
+  "diagrams": [
+    {
+      "dom_id": "activity-chart",
+      "readout_id": "activity-readout",
+      "data_shape": "Daily commits across approximately 72 calendar days, including zero-commit days.",
+      "candidate_comparison": [
+        {
+          "template": "L3 Barcode Lollipop",
+          "gallery": "templates/lupi-gallery.html",
+          "card_title": "Ninety days as a barcode",
+          "fit": "Selected: Lupi's day-by-day sequence makes each calendar date a visible record, and its 90-day scale covers the 72-day history.",
+          "tradeoff": "The original uses weekends as a separate mark style; this chart reserves mark placement for the real commit count and includes zero days explicitly."
+        },
+        {
+          "template": "F2 Hairline Line",
+          "gallery": "templates/basics-gallery.html",
+          "card_title": "Thirty days of sign-ups",
+          "fit": "A legitimate daily series for short date ranges.",
+          "tradeoff": "The catalog caps it at 30 days, far shorter than this history."
+        },
+        {
+          "template": "F3 Hairline Area",
+          "gallery": "templates/basics-gallery.html",
+          "card_title": "Concurrent users, filled with days",
+          "fit": "A daily sequence can be shown as a continuous activity shape.",
+          "tradeoff": "It is intended for 30–60 days and emphasizes the area shape; the 72-day story needs every daily record to remain inspectable."
+        }
+      ],
+      "selected_geometry": "L3's full-height calendar hairline per day, a value-positioned lollipop dot with stem, three spaced peak labels, and month labels.",
+      "encoding": "One dot and one vertical hairline per date. Dot height is proportional to commits; a zero-commit day stays at the baseline and remains present. Daily author counts appear in the point readout when supplied.",
+      "interaction": "Each date is a real record. Pointer and roving keyboard focus update the caption; click or Enter/Space pins it. No source link is fabricated when the activity record has no URL."
+    },
+    {
+      "dom_id": "contributor-chart",
+      "readout_id": "contributor-readout",
+      "data_shape": "Top eight commit-attributed identities with exact commit totals.",
+      "candidate_comparison": [
+        {
+          "template": "F5 Tick Rows",
+          "gallery": "templates/basics-gallery.html",
+          "card_title": "Six teams, shipped and counted",
+          "fit": "Selected: the catalog is built for horizontal ranked comparisons with up to eight countable rows, so long identities fit better than vertical category labels.",
+          "tradeoff": "The source example uses one tick per release; this chart uses a larger declared unit and a proportional final remainder."
+        },
+        {
+          "template": "L2 Dot Cascade",
+          "gallery": "templates/lupi-gallery.html",
+          "card_title": "What breaks, stacked and ranked",
+          "fit": "A ranked unit chart can compare countable categories and can display each contributor as a row of marks.",
+          "tradeoff": "Its cascading diagonal and dense point field favor a poster-like ranking; F5 provides a clearer horizontal queue for exact commit totals and names."
+        },
+        {
+          "template": "F1 Rung Bars",
+          "gallery": "templates/basics-gallery.html",
+          "card_title": "Revenue by plan, rung by rung",
+          "fit": "It handles up to eight countable categories with explicit one-unit marks.",
+          "tradeoff": "Vertical bars spend width on long login labels and weaken the requested ranking read; F5 has the more suitable horizontal geometry."
+        }
+      ],
+      "selected_geometry": "F5's aligned horizontal rows, countable vertical ticks, every-fifth-unit marker, and row-end total.",
+      "encoding": "One full tick equals 25 commits; a shorter final tick has length proportional to the remainder divided by 25. Row-end labels retain each exact total. Only real top-eight login records are drawn.",
+      "interaction": "A tick reports its contributor and commit unit; pinning a mark adds the source profile link from the provided contributor record. Login labels are shortened only on the SVG; accessible names and readouts retain the complete login."
+    },
+    {
+      "dom_id": "participation-chart",
+      "readout_id": "participation-readout",
+      "data_shape": "315 distinct merged-PR authors grouped by exactly one merged PR versus multiple merged PRs.",
+      "candidate_comparison": [
+        {
+          "template": "L14 Hundred Field",
+          "gallery": "templates/lupi-gallery.html",
+          "card_title": "A hundred of us, four minds",
+          "fit": "Selected: its unit-decomposition contract lets every dot stand for one actual person; the two author groups remain directly countable and sum to the 315 supplied identities.",
+          "tradeoff": "The source example uses 100 respondents. This adapts the same phyllotaxis field to the actual 315 identities and uses area-scaled cluster spread, without inventing respondents."
+        },
+        {
+          "template": "L2 Dot Cascade",
+          "gallery": "templates/lupi-gallery.html",
+          "card_title": "What breaks, stacked and ranked",
+          "fit": "Can show countable units across ranked categories.",
+          "tradeoff": "Its cascade ranks category totals and separates categories along a diagonal; it makes individual account inspection and the two-way composition less direct."
+        },
+        {
+          "template": "F4 Tick Donut",
+          "gallery": "templates/basics-gallery.html",
+          "card_title": "Where the traffic comes from",
+          "fit": "Two categories fit its small composition limit.",
+          "tradeoff": "A donut would aggregate the 315 accounts into shares and discard the requested one-dot-per-author identity."
+        }
+      ],
+      "selected_geometry": "L14's two point fields use deterministic golden-angle placement, countable dots, every-fifth-point spokes, and grouped labels.",
+      "encoding": "Each dot comes from one real mergedAuthors record. The lightest ladder value denotes repeat authors; a lower-contrast gray denotes authors with exactly one merged PR. Cluster membership and dot count encode category and number of people, not star counts.",
+      "interaction": "All 315 records are inspectable through one roving tab stop per SVG. Focus or hover identifies the login and merged-PR total; click or Enter/Space pins the real profile URL from the record."
+    },
+    {
+      "dom_id": "merge-chart",
+      "readout_id": "merge-readout",
+      "data_shape": "Frequency across six supplied merge-duration bins for 80 merged PRs in a bounded, recent-closed-PR sample.",
+      "candidate_comparison": [
+        {
+          "template": "F1 Rung Bars",
+          "gallery": "templates/basics-gallery.html",
+          "card_title": "Revenue by plan, rung by rung",
+          "fit": "Selected: six supplied bins fall within its eight-category limit, and each count is a small exact integer that can be drawn as countable PR rungs.",
+          "tradeoff": "The title and bin labels are adapted to merge durations; no interpolation is made between duration buckets."
+        },
+        {
+          "template": "F5 Tick Rows",
+          "gallery": "templates/basics-gallery.html",
+          "card_title": "Six teams, shipped and counted",
+          "fit": "Could compare six bins with exact horizontal unit marks.",
+          "tradeoff": "Its queue shape emphasizes a ranking; the vertical rung form more clearly preserves the supplied frequency-by-bin structure."
+        },
+        {
+          "template": "F14 Rung Histogram",
+          "gallery": "templates/basics-gallery.html",
+          "card_title": "Most tickets resolve within six hours",
+          "fit": "Its domain is single-variable binned frequency, and the merge-duration bins have explicit time boundaries.",
+          "tradeoff": "F14 is the fallback histogram template. F1 already carries these six categories with exact one-PR rungs, so the mainline template can encode the data without adding a second shape or implying a continuous bar."
+        }
+      ],
+      "selected_geometry": "F1's independent countable rung stacks, shared baseline, peak count labels, and category labels.",
+      "encoding": "One rung equals one merged PR in that duration bin. Bin counts come from the matching real records; the chart does not draw a continuous bar or infer durations between bin boundaries.",
+      "interaction": "Every rung is linked to a sampled PR record and reports its exact sampled duration; clicking or pressing Enter/Space pins the PR URL. The readout keeps the bounded sample definition visible."
+    }
+  ],
+  "accessibility": {
+    "svg": "Every chart SVG has a title, description, role=group, and a description link to its readout.",
+    "keyboard": "One data mark per chart is in the tab order. Arrow keys move between marks; Home and End jump to the first and last mark; Enter/Space pins; Escape clears a pin.",
+    "pointer": "Hover updates the human-readable readout and the page-level #chart-tooltip element; click pins the current record and its GitHub source link where available.",
+    "motion": "Lieflat-style reveal runs when each SVG enters view; clicking the empty SVG restarts it. prefers-reduced-motion disables animation.",
+    "tables": "Accessible expandable data tables are provided by the parent page, outside this module."
+  },
+  "source_blocks": [
+    {
+      "template": "L3 Barcode Lollipop",
+      "gallery_file": "anyps5-story/vendor/lieflat/templates/lupi-gallery.html",
+      "actual_card_title": "Ninety days as a barcode",
+      "actual_card_id_in_file": "2"
+    },
+    {
+      "template": "F5 Tick Rows",
+      "gallery_file": "anyps5-story/vendor/lieflat/templates/basics-gallery.html",
+      "actual_card_title": "Six teams, shipped and counted"
+    },
+    {
+      "template": "L14 Hundred Field",
+      "gallery_file": "anyps5-story/vendor/lieflat/templates/lupi-gallery.html",
+      "actual_card_title": "A hundred of us, four minds"
+    },
+    {
+      "template": "F1 Rung Bars",
+      "gallery_file": "anyps5-story/vendor/lieflat/templates/basics-gallery.html",
+      "actual_card_title": "Revenue by plan, rung by rung"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "retrieved_at_utc": "2026-10-13T11:27:07Z",
+  "repository": "https://github.com/boykopovar/AnyPS5",
+  "source_commit": "075169f7b3faeae1216efc35df41c44fac9f3190",
+  "license_context": {
+    "observed": "The repository metadata and checked-in LICENSE identify GPL-2.0/GPL v2.",
+    "interpretation": "The engineering examples below describe code transformation and contribution workflow; they do not imply any change in software licensing.",
+    "sources": [
+      "https://github.com/boykopovar/AnyPS5/blob/075169f7b3faeae1216efc35df41c44fac9f3190/LICENSE",
+      "https://api.github.com/repos/boykopovar/AnyPS5"
+    ]
+  },
+  "compiled_code_example": {
+    "observed": "The codegen golden test rewrites AMD SSE4a EXTRQ bytes 66 0F 78 C3 00 00 to F3 0F 7E DB 66 90 (MOVQ plus NOP padding). The converter can also place semantic lowerings in trampolines and repairs control-flow references; unsupported or unreachable conversions fail.",
+    "scope": "--to-intel handles supported AMD-only instructions present in the executable and bundled modules; it cannot translate AMD instructions generated at runtime.",
+    "citations": [
+      "https://github.com/boykopovar/AnyPS5/blob/075169f7b3faeae1216efc35df41c44fac9f3190/core/relinker/codegen/tests/Amd64OnlyConverterTests.cpp#L395-L402",
+      "https://github.com/boykopovar/AnyPS5/blob/075169f7b3faeae1216efc35df41c44fac9f3190/docs/user/USAGE.md#L36-L50",
+      "https://github.com/boykopovar/AnyPS5/blob/075169f7b3faeae1216efc35df41c44fac9f3190/core/relinker/codegen/include/codegen/x86/Amd64OnlySubstitutionTable.hpp"
+    ]
+  },
+  "imports_and_native_implementation": {
+    "observed": "The relinker reads imports by NID; built PRX libraries expose NID-named exports and the OS loader binds by NID. PR #5036 changes core/libs/prx/libc/src/Math.cpp (AtanhfLog1p/atanhf) and core/libs/tests/GuestMath.cpp. Its description says Dusklight (PPSA99305) stopped on missing libc NID cPGyc5FGjy0 (atanhf), motivating the implementation.",
+    "episode_three_moves": [
+      "Input: title import audit / failed load identifies cPGyc5FGjy0 from libSceLibcInternal.prx.",
+      "Code and knowledge: the merged patch adds AtanhfLog1p/atanhf to libc and adds GuestMath branch/edge tests.",
+      "Validation: PR author reports exhaustive 2^32 float-input bit/errno/exception comparison against PPSA28319 bundled code on Windows, guest_math checks, and ctest results; not independently rerun here."
+    ],
+    "citations": [
+      "https://github.com/boykopovar/AnyPS5/blob/075169f7b3faeae1216efc35df41c44fac9f3190/docs/dev/ARCHITECTURE.md#L14-L46",
+      "https://github.com/boykopovar/AnyPS5/pull/5036/files",
+      "https://github.com/boykopovar/AnyPS5/pull/5036",
+      "https://github.com/boykopovar/AnyPS5/blob/075169f7b3faeae1216efc35df41c44fac9f3190/core/libs/nid/src/NidResolver.cpp",
+      "https://github.com/boykopovar/AnyPS5/blob/075169f7b3faeae1216efc35df41c44fac9f3190/core/libs/prx/libc/src/Math.cpp",
+      "https://github.com/boykopovar/AnyPS5/blob/075169f7b3faeae1216efc35df41c44fac9f3190/core/libs/tests/GuestMath.cpp"
+    ]
+  },
+  "shader_pipeline": {
+    "observed": "ShaderRecompiler decodes RDNA instructions, builds control flow and translates to an intermediate representation, then emits SPIR-V for Vulkan. SPIRV-Tools validation and optimization are gated by ANYPS5_ENABLE_SPIRV_TOOLS.",
+    "citations": [
+      "https://github.com/boykopovar/AnyPS5/blob/075169f7b3faeae1216efc35df41c44fac9f3190/core/shader/recompiler/Recompiler.cpp#L100-L105",
+      "https://github.com/boykopovar/AnyPS5/blob/075169f7b3faeae1216efc35df41c44fac9f3190/core/shader/recompiler/Recompiler.cpp#L185-L193",
+      "https://github.com/boykopovar/AnyPS5/blob/075169f7b3faeae1216efc35df41c44fac9f3190/core/shader/recompiler/Recompiler.cpp#L442-L450",
+      "https://github.com/boykopovar/AnyPS5/blob/075169f7b3faeae1216efc35df41c44fac9f3190/docs/dev/ARCHITECTURE.md#L79-L97"
+    ]
+  },
+  "ai_assistance_evidence": {
+    "observed": "Three merged PR descriptions explicitly mark the template field '[x] AI-assisted: yes'. This establishes author disclosure, not how much work the model performed or that the reported validation was reproduced here.",
+    "merged_prs": [
+      {
+        "number": 5036,
+        "change": "libc atanhf implementation",
+        "merged_at_utc": "2026-10-13T09:23:00Z",
+        "source": "https://github.com/boykopovar/AnyPS5/pull/5036"
+      },
+      {
+        "number": 5035,
+        "change": "sceSystemServiceShowControllerSettings no-op",
+        "merged_at_utc": "2026-10-13T09:35:55Z",
+        "source": "https://github.com/boykopovar/AnyPS5/pull/5035"
+      },
+      {
+        "number": 5017,
+        "change": "Proprietary voice chat helper lifecycle",
+        "merged_at_utc": "2026-10-13T08:47:32Z",
+        "source": "https://github.com/boykopovar/AnyPS5/pull/5017"
+      }
+    ],
+    "workflow": "CONTRIBUTING.md asks for focused tests and documents local/CI build paths; the PR template has separate Tested and AI-assisted fields. A disclosure is evidence of reported assistance, not independent proof of authorship.",
+    "sources": [
+      "https://github.com/boykopovar/AnyPS5/blob/075169f7b3faeae1216efc35df41c44fac9f3190/CONTRIBUTING.md",
+      "https://github.com/boykopovar/AnyPS5/blob/075169f7b3faeae1216efc35df41c44fac9f3190/.github/pull_request_template.md",
+      "https://github.com/boykopovar/AnyPS5/pull/5036",
+      "https://github.com/boykopovar/AnyPS5/pull/5035",
+      "https://github.com/boykopovar/AnyPS5/pull/5017"
+    ]
+  },
+  "raw_provenance": "research/architecture/raw/binary-evidence-fetch.json; PR patch is retained in research/architecture/raw/pr-5036-files.json, and PR descriptions in research/editorial/raw/closed-pulls.json"
+}

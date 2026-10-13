@@ -10,3 +10,9 @@ research/architecture/raw/
 research/visual/*.png
 research/visual/*-checks.json
 research/visual/*.log
+
+dist/assets/anatomy/console*
+
+graphify-out/
+scripts/build-anatomy.mjs
+scripts/prepare-assets.py

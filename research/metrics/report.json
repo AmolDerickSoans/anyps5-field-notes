@@ -1,0 +1,990 @@
+{
+  "repository": {
+    "full_name": "boykopovar/AnyPS5",
+    "html_url": "https://github.com/boykopovar/AnyPS5",
+    "description": "Tool for automatic PS5 executables porting to Linux and Windows",
+    "created_at_utc": "2026-08-03T21:30:25Z",
+    "updated_at_utc": "2026-10-13T10:05:16Z",
+    "pushed_at_utc": "2026-10-13T09:54:24Z",
+    "default_branch": "main",
+    "visibility": "public"
+  },
+  "snapshot_at_utc": "2026-10-13T10:05:27Z",
+  "headline_metrics": {
+    "stars": 33740,
+    "forks": 2916,
+    "watchers": 338,
+    "open_issues_including_pull_requests": 667,
+    "open_issues_only": 147
+  },
+  "repository_created_at_utc": "2026-08-03T21:30:25Z",
+  "earliest_reachable_commit_author_date_utc": "2026-08-03T17:02:52Z",
+  "series": {
+    "daily_commits_on_default_branch_by_author_date_utc": [
+      {
+        "date": "2026-08-03",
+        "commits": 15
+      },
+      {
+        "date": "2026-08-04",
+        "commits": 14
+      },
+      {
+        "date": "2026-08-05",
+        "commits": 6
+      },
+      {
+        "date": "2026-08-12",
+        "commits": 1
+      },
+      {
+        "date": "2026-08-18",
+        "commits": 3
+      },
+      {
+        "date": "2026-08-19",
+        "commits": 1
+      },
+      {
+        "date": "2026-08-20",
+        "commits": 9
+      },
+      {
+        "date": "2026-08-21",
+        "commits": 8
+      },
+      {
+        "date": "2026-08-22",
+        "commits": 12
+      },
+      {
+        "date": "2026-08-24",
+        "commits": 1
+      },
+      {
+        "date": "2026-08-30",
+        "commits": 1
+      },
+      {
+        "date": "2026-09-05",
+        "commits": 6
+      },
+      {
+        "date": "2026-09-06",
+        "commits": 17
+      },
+      {
+        "date": "2026-09-07",
+        "commits": 25
+      },
+      {
+        "date": "2026-09-08",
+        "commits": 11
+      },
+      {
+        "date": "2026-09-09",
+        "commits": 10
+      },
+      {
+        "date": "2026-09-10",
+        "commits": 10
+      },
+      {
+        "date": "2026-09-11",
+        "commits": 11
+      },
+      {
+        "date": "2026-09-12",
+        "commits": 16
+      },
+      {
+        "date": "2026-09-13",
+        "commits": 23
+      },
+      {
+        "date": "2026-09-14",
+        "commits": 21
+      },
+      {
+        "date": "2026-09-15",
+        "commits": 17
+      },
+      {
+        "date": "2026-09-16",
+        "commits": 17
+      },
+      {
+        "date": "2026-09-17",
+        "commits": 12
+      },
+      {
+        "date": "2026-09-18",
+        "commits": 17
+      },
+      {
+        "date": "2026-09-19",
+        "commits": 4
+      },
+      {
+        "date": "2026-09-20",
+        "commits": 5
+      },
+      {
+        "date": "2026-09-21",
+        "commits": 15
+      },
+      {
+        "date": "2026-09-22",
+        "commits": 18
+      },
+      {
+        "date": "2026-09-23",
+        "commits": 31
+      },
+      {
+        "date": "2026-09-24",
+        "commits": 58
+      },
+      {
+        "date": "2026-09-25",
+        "commits": 27
+      },
+      {
+        "date": "2026-09-26",
+        "commits": 48
+      },
+      {
+        "date": "2026-09-27",
+        "commits": 52
+      },
+      {
+        "date": "2026-09-28",
+        "commits": 177
+      },
+      {
+        "date": "2026-09-29",
+        "commits": 125
+      },
+      {
+        "date": "2026-09-30",
+        "commits": 103
+      },
+      {
+        "date": "2026-10-01",
+        "commits": 138
+      },
+      {
+        "date": "2026-10-02",
+        "commits": 166
+      },
+      {
+        "date": "2026-10-03",
+        "commits": 93
+      },
+      {
+        "date": "2026-10-04",
+        "commits": 274
+      },
+      {
+        "date": "2026-10-05",
+        "commits": 418
+      },
+      {
+        "date": "2026-10-06",
+        "commits": 315
+      },
+      {
+        "date": "2026-10-07",
+        "commits": 407
+      },
+      {
+        "date": "2026-10-08",
+        "commits": 662
+      },
+      {
+        "date": "2026-10-09",
+        "commits": 567
+      },
+      {
+        "date": "2026-10-10",
+        "commits": 879
+      },
+      {
+        "date": "2026-10-11",
+        "commits": 1156
+      },
+      {
+        "date": "2026-10-12",
+        "commits": 636
+      },
+      {
+        "date": "2026-10-13",
+        "commits": 144
+      }
+    ],
+    "daily_stars_by_starred_at_utc": null,
+    "daily_commit_authorship_and_unique_logins_utc": [
+      {
+        "date": "2026-08-03",
+        "commits": 15,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 15,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-08-04",
+        "commits": 14,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 14,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-08-05",
+        "commits": 6,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 6,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-08-12",
+        "commits": 1,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 1,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-08-18",
+        "commits": 3,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 3,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-08-19",
+        "commits": 1,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 1,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-08-20",
+        "commits": 9,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 9,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-08-21",
+        "commits": 8,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 8,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-08-22",
+        "commits": 12,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 12,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-08-24",
+        "commits": 1,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 1,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-08-30",
+        "commits": 1,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 1,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-09-05",
+        "commits": 6,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 6,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-09-06",
+        "commits": 17,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 17,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-09-07",
+        "commits": 25,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 25,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-09-08",
+        "commits": 11,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 11,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-09-09",
+        "commits": 10,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 10,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-09-10",
+        "commits": 10,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 10,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-09-11",
+        "commits": 11,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 11,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-09-12",
+        "commits": 16,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 16,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-09-13",
+        "commits": 23,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 23,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-09-14",
+        "commits": 21,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 21,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-09-15",
+        "commits": 17,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 17,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-09-16",
+        "commits": 17,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 17,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-09-17",
+        "commits": 12,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 12,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-09-18",
+        "commits": 17,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 17,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-09-19",
+        "commits": 4,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 4,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-09-20",
+        "commits": 5,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 5,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-09-21",
+        "commits": 15,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 15,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-09-22",
+        "commits": 18,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 18,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-09-23",
+        "commits": 31,
+        "daily_unique_linked_author_logins": 1,
+        "daily_unique_human_author_logins": 1,
+        "cumulative_unique_linked_author_logins": 1,
+        "cumulative_unique_human_author_logins": 1,
+        "commit_attribution": {
+          "owner": 31,
+          "other_linked": 0,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-09-24",
+        "commits": 58,
+        "daily_unique_linked_author_logins": 2,
+        "daily_unique_human_author_logins": 2,
+        "cumulative_unique_linked_author_logins": 2,
+        "cumulative_unique_human_author_logins": 2,
+        "commit_attribution": {
+          "owner": 15,
+          "other_linked": 43,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-09-25",
+        "commits": 27,
+        "daily_unique_linked_author_logins": 3,
+        "daily_unique_human_author_logins": 3,
+        "cumulative_unique_linked_author_logins": 3,
+        "cumulative_unique_human_author_logins": 3,
+        "commit_attribution": {
+          "owner": 15,
+          "other_linked": 12,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-09-26",
+        "commits": 48,
+        "daily_unique_linked_author_logins": 3,
+        "daily_unique_human_author_logins": 3,
+        "cumulative_unique_linked_author_logins": 4,
+        "cumulative_unique_human_author_logins": 4,
+        "commit_attribution": {
+          "owner": 28,
+          "other_linked": 14,
+          "bot": 0,
+          "unlinked": 6
+        }
+      },
+      {
+        "date": "2026-09-27",
+        "commits": 52,
+        "daily_unique_linked_author_logins": 8,
+        "daily_unique_human_author_logins": 8,
+        "cumulative_unique_linked_author_logins": 8,
+        "cumulative_unique_human_author_logins": 8,
+        "commit_attribution": {
+          "owner": 14,
+          "other_linked": 37,
+          "bot": 0,
+          "unlinked": 1
+        }
+      },
+      {
+        "date": "2026-09-28",
+        "commits": 177,
+        "daily_unique_linked_author_logins": 10,
+        "daily_unique_human_author_logins": 10,
+        "cumulative_unique_linked_author_logins": 14,
+        "cumulative_unique_human_author_logins": 14,
+        "commit_attribution": {
+          "owner": 85,
+          "other_linked": 88,
+          "bot": 0,
+          "unlinked": 4
+        }
+      },
+      {
+        "date": "2026-09-29",
+        "commits": 125,
+        "daily_unique_linked_author_logins": 13,
+        "daily_unique_human_author_logins": 13,
+        "cumulative_unique_linked_author_logins": 18,
+        "cumulative_unique_human_author_logins": 18,
+        "commit_attribution": {
+          "owner": 15,
+          "other_linked": 110,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-09-30",
+        "commits": 103,
+        "daily_unique_linked_author_logins": 12,
+        "daily_unique_human_author_logins": 12,
+        "cumulative_unique_linked_author_logins": 22,
+        "cumulative_unique_human_author_logins": 22,
+        "commit_attribution": {
+          "owner": 60,
+          "other_linked": 43,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-10-01",
+        "commits": 138,
+        "daily_unique_linked_author_logins": 14,
+        "daily_unique_human_author_logins": 14,
+        "cumulative_unique_linked_author_logins": 25,
+        "cumulative_unique_human_author_logins": 25,
+        "commit_attribution": {
+          "owner": 58,
+          "other_linked": 80,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-10-02",
+        "commits": 166,
+        "daily_unique_linked_author_logins": 15,
+        "daily_unique_human_author_logins": 15,
+        "cumulative_unique_linked_author_logins": 29,
+        "cumulative_unique_human_author_logins": 29,
+        "commit_attribution": {
+          "owner": 51,
+          "other_linked": 115,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-10-03",
+        "commits": 93,
+        "daily_unique_linked_author_logins": 8,
+        "daily_unique_human_author_logins": 8,
+        "cumulative_unique_linked_author_logins": 30,
+        "cumulative_unique_human_author_logins": 30,
+        "commit_attribution": {
+          "owner": 25,
+          "other_linked": 68,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-10-04",
+        "commits": 274,
+        "daily_unique_linked_author_logins": 14,
+        "daily_unique_human_author_logins": 14,
+        "cumulative_unique_linked_author_logins": 34,
+        "cumulative_unique_human_author_logins": 34,
+        "commit_attribution": {
+          "owner": 0,
+          "other_linked": 274,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-10-05",
+        "commits": 418,
+        "daily_unique_linked_author_logins": 26,
+        "daily_unique_human_author_logins": 26,
+        "cumulative_unique_linked_author_logins": 47,
+        "cumulative_unique_human_author_logins": 47,
+        "commit_attribution": {
+          "owner": 13,
+          "other_linked": 402,
+          "bot": 0,
+          "unlinked": 3
+        }
+      },
+      {
+        "date": "2026-10-06",
+        "commits": 315,
+        "daily_unique_linked_author_logins": 38,
+        "daily_unique_human_author_logins": 38,
+        "cumulative_unique_linked_author_logins": 64,
+        "cumulative_unique_human_author_logins": 64,
+        "commit_attribution": {
+          "owner": 21,
+          "other_linked": 294,
+          "bot": 0,
+          "unlinked": 0
+        }
+      },
+      {
+        "date": "2026-10-07",
+        "commits": 407,
+        "daily_unique_linked_author_logins": 63,
+        "daily_unique_human_author_logins": 63,
+        "cumulative_unique_linked_author_logins": 102,
+        "cumulative_unique_human_author_logins": 102,
+        "commit_attribution": {
+          "owner": 24,
+          "other_linked": 382,
+          "bot": 0,
+          "unlinked": 1
+        }
+      },
+      {
+        "date": "2026-10-08",
+        "commits": 662,
+        "daily_unique_linked_author_logins": 102,
+        "daily_unique_human_author_logins": 102,
+        "cumulative_unique_linked_author_logins": 155,
+        "cumulative_unique_human_author_logins": 155,
+        "commit_attribution": {
+          "owner": 15,
+          "other_linked": 643,
+          "bot": 0,
+          "unlinked": 4
+        }
+      },
+      {
+        "date": "2026-10-09",
+        "commits": 567,
+        "daily_unique_linked_author_logins": 100,
+        "daily_unique_human_author_logins": 100,
+        "cumulative_unique_linked_author_logins": 200,
+        "cumulative_unique_human_author_logins": 200,
+        "commit_attribution": {
+          "owner": 13,
+          "other_linked": 551,
+          "bot": 0,
+          "unlinked": 3
+        }
+      },
+      {
+        "date": "2026-10-10",
+        "commits": 879,
+        "daily_unique_linked_author_logins": 88,
+        "daily_unique_human_author_logins": 88,
+        "cumulative_unique_linked_author_logins": 235,
+        "cumulative_unique_human_author_logins": 235,
+        "commit_attribution": {
+          "owner": 11,
+          "other_linked": 852,
+          "bot": 0,
+          "unlinked": 16
+        }
+      },
+      {
+        "date": "2026-10-11",
+        "commits": 1156,
+        "daily_unique_linked_author_logins": 126,
+        "daily_unique_human_author_logins": 126,
+        "cumulative_unique_linked_author_logins": 290,
+        "cumulative_unique_human_author_logins": 290,
+        "commit_attribution": {
+          "owner": 3,
+          "other_linked": 1106,
+          "bot": 0,
+          "unlinked": 47
+        }
+      },
+      {
+        "date": "2026-10-12",
+        "commits": 636,
+        "daily_unique_linked_author_logins": 99,
+        "daily_unique_human_author_logins": 99,
+        "cumulative_unique_linked_author_logins": 314,
+        "cumulative_unique_human_author_logins": 314,
+        "commit_attribution": {
+          "owner": 0,
+          "other_linked": 626,
+          "bot": 0,
+          "unlinked": 10
+        }
+      },
+      {
+        "date": "2026-10-13",
+        "commits": 144,
+        "daily_unique_linked_author_logins": 16,
+        "daily_unique_human_author_logins": 16,
+        "cumulative_unique_linked_author_logins": 315,
+        "cumulative_unique_human_author_logins": 315,
+        "commit_attribution": {
+          "owner": 0,
+          "other_linked": 142,
+          "bot": 0,
+          "unlinked": 2
+        }
+      }
+    ]
+  },
+  "coverage": {
+    "commit_count": 6802,
+    "commit_pages": 69,
+    "star_records": null,
+    "star_history_complete_for_current_stargazers": false,
+    "release_count": 2,
+    "contributor_identity_count": 314,
+    "api_requests": 77,
+    "minimum_rate_limit_remaining_observed": 29,
+    "distinct_linked_author_logins_in_default_branch_history": 315,
+    "distinct_human_linked_author_logins_in_default_branch_history": 315,
+    "distinct_bot_author_logins_in_default_branch_history": 0,
+    "minimum_rate_limit_remaining_observed_note": "29 was the search bucket minimum (limit 30), not core API remaining."
+  },
+  "caveats": [
+    "Repository creation time comes from GitHub repository metadata. The earliest reachable commit is a separate timestamp and may predate repository creation.",
+    "Star history uses the stargazers endpoint's starred_at timestamps and covers currently returned stargazers; deleted accounts and stars removed before collection are not represented.",
+    "GitHub restricted the stargazers listing endpoint to repository admins and collaborators in July 2026. This account received HTTP 404, so historical star dates are unavailable in this collection.",
+    "The watchers field is GitHub subscribers_count (people watching notifications). The API's watchers_count mirrors stargazers_count and is not presented as notification watchers.",
+    "Repository metadata's open_issues_count includes open pull requests; open_issues_only is the separate GitHub issue-search total.",
+    "GitHub contributors endpoint attributes contributors from repository commits, returns ranked/paginated entries, and may omit users who hide their contribution graph; anon=1 includes anonymous commit authors. These are commit-attributed contributors, not all users who interacted with the repository.",
+    "Commit activity counts default-branch commits using author dates. It measures repository history, not unique human contributions or all branches.",
+    "Language values are GitHub Linguist byte counts, not line counts."
+  ],
+  "star_history_graphql_probe": {
+    "retrieved_at_utc": "2026-10-13T10:07:28Z",
+    "stargazer_count": 33748,
+    "requested_connections": [
+      "first 1",
+      "oldest first 1",
+      "newest first 1"
+    ],
+    "edges_returned": 0,
+    "earliest_starred_at_utc": null,
+    "latest_starred_at_utc": null,
+    "conclusion": "GraphQL reports the count but returns empty stargazer edges for all three connection probes; no first/last event date is available to this account."
+  },
+  "author_attribution_method": {
+    "repository_owner_login": "boykopovar",
+    "date_basis": "commit.commit.author.date, converted to UTC calendar day",
+    "linked_identity": "commit.author.login from GitHub commit attribution object; counts unique login strings",
+    "bot_rule": "commit.author.type equals Bot or login ends with [bot]",
+    "categories": "Each commit is assigned once: bot first, then unlinked when GitHub author login is null, then owner login, otherwise other_linked.",
+    "cumulative_rule": "A GitHub-linked login is added on its first observed UTC author-date day on the current default-branch history; human cumulative excludes bot accounts.",
+    "history_limit": "These are author dates in the currently reachable default-branch history. They are not observation times; imported or rewritten commits can be backdated, and author attribution does not prove a unique natural person."
+  },
+  "collection_completed_at_utc": "2026-10-13T10:05:48Z",
+  "sources": [
+    {
+      "label": "GitHub repository metadata and commit history",
+      "url": "https://api.github.com/repos/boykopovar/AnyPS5"
+    },
+    {
+      "label": "GitHub REST API: stargazer listing access requirements",
+      "url": "https://docs.github.com/en/rest/activity/starring"
+    },
+    {
+      "label": "AnyPS5 repository",
+      "url": "https://github.com/boykopovar/AnyPS5"
+    }
+  ]
+}

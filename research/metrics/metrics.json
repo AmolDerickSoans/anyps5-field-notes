@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "repository": {
+    "full_name": "boykopovar/AnyPS5",
+    "html_url": "https://github.com/boykopovar/AnyPS5",
+    "description": "Tool for automatic PS5 executables porting to Linux and Windows",
+    "created_at_utc": "2026-08-03T21:30:25Z",
+    "updated_at_utc": "2026-10-13T10:05:16Z",
+    "pushed_at_utc": "2026-10-13T09:54:24Z",
+    "default_branch": "main",
+    "visibility": "public"
+  },
+  "snapshot_at_utc": "2026-10-13T10:05:27Z",
+  "snapshot_counts": {
+    "stars": 33740,
+    "forks": 2916,
+    "watchers": 338,
+    "open_issues_including_pull_requests": 667,
+    "open_issues_only": 147
+  },
+  "languages_bytes": {
+    "C++": 20589336,
+    "Python": 706798,
+    "CMake": 487650,
+    "C": 9447,
+    "Assembly": 7528,
+    "GLSL": 1488
+  },
+  "release_count": 2,
+  "releases": [
+    {
+      "tag_name": "v0.1.1",
+      "name": "v0.1.1",
+      "published_at_utc": "2026-09-28T23:34:39Z",
+      "html_url": "https://github.com/boykopovar/AnyPS5/releases/tag/v0.1.1",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "tag_name": "v0.1.0",
+      "name": "v0.1.0",
+      "published_at_utc": "2026-09-28T21:53:19Z",
+      "html_url": "https://github.com/boykopovar/AnyPS5/releases/tag/v0.1.0",
+      "draft": false,
+      "prerelease": false
+    }
+  ],
+  "contributors": {
+    "endpoint": "GET /repos/boykopovar/AnyPS5/contributors?anon=1",
+    "returned_rows": 333,
+    "identified_accounts": 313,
+    "anonymous_author_identities": 1,
+    "unique_endpoint_identities": 314,
+    "attribution_note": "GitHub contributors endpoint attributes contributors from repository commits, returns ranked/paginated entries, and may omit users who hide their contribution graph; anon=1 includes anonymous commit authors. These are commit-attributed contributors, not all users who interacted with the repository."
+  },
+  "default_branch_commits": {
+    "branch": "main",
+    "count_from_rest_pagination": 6802,
+    "pages_collected": 69,
+    "per_page": 100,
+    "earliest_reachable_commit_author_date_utc": "2026-08-03T17:02:52Z",
+    "earliest_reachable_commit_sha": "657ada06b3eafd7fe7ce36ebfbd667951624decc",
+    "date_basis": "commit.commit.author.date; this is author timestamp, not repository creation time or necessarily committer timestamp"
+  },
+  "star_history": {
+    "endpoint": "GET /repos/boykopovar/AnyPS5/stargazers",
+    "accept": "application/vnd.github.star+json",
+    "available": false,
+    "unavailable_reason": "HTTP 404 for /repos/boykopovar/AnyPS5/stargazers: Not Found",
+    "returned_stargazers": null,
+    "api_snapshot_stars": 33740,
+    "complete_for_current_stargazers": false,
+    "undated_records": null,
+    "date_basis": "starred_at UTC event timestamp",
+    "graphql_probe": {
+      "retrieved_at_utc": "2026-10-13T10:07:28Z",
+      "stargazer_count": 33748,
+      "requested_connections": [
+        "first 1",
+        "oldest first 1",
+        "newest first 1"
+      ],
+      "edges_returned": 0,
+      "earliest_starred_at_utc": null,
+      "latest_starred_at_utc": null,
+      "conclusion": "GraphQL reports the count but returns empty stargazer edges for all three connection probes; no first/last event date is available to this account."
+    }
+  },
+  "collection": {
+    "started_at_utc": "2026-10-13T10:05:27Z",
+    "completed_at_utc": "2026-10-13T10:05:48Z",
+    "authenticated": true,
+    "api_rate_limit_observed_min_remaining": 29,
+    "api_rate_limit": 5000,
+    "api_rate_limit_used_at_last_response": 223,
+    "api_rate_limit_reset_epoch": 1791888945,
+    "requests_recorded": 77,
+    "rate_limit_snapshot_at_utc": "2026-10-13T10:09:00Z",
+    "rate_limits_by_resource_at_snapshot": {
+      "core": {
+        "limit": 5000,
+        "used": 0,
+        "remaining": 5000,
+        "reset": 1791889736
+      },
+      "search": {
+        "limit": 30,
+        "used": 0,
+        "remaining": 30,
+        "reset": 1791886196
+      },
+      "graphql": {
+        "limit": 5000,
+        "used": 3,
+        "remaining": 4997,
+        "reset": 1791889077
+      }
+    },
+    "api_rate_limit_observed_min_remaining_note": "29 was the minimum response-header remaining count across observed buckets and came from the search bucket (limit 30); it does not represent core quota remaining."
+  }
+}
