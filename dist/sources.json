@@ -441,7 +441,7 @@
             "gallery": "templates/basics-gallery.html",
             "card_title": "Concurrent users, filled with days",
             "fit": "A daily sequence can be shown as a continuous activity shape.",
-            "tradeoff": "It is intended for 30–60 days and emphasizes the area shape; the 72-day story needs every daily record to remain inspectable."
+            "tradeoff": "It is intended for 30\u201360 days and emphasizes the area shape; the 72-day story needs every daily record to remain inspectable."
           }
         ],
         "selected_geometry": "L3's full-height calendar hairline per day, a value-positioned lollipop dot with stem, three spaced peak labels, and month labels.",
@@ -679,7 +679,7 @@
         "sha": "075169f7b3faeae1216efc35df41c44fac9f3190",
         "committer_date_utc": "2026-10-13T10:42:40Z"
       },
-      "snapshot_note": "The Pages assets correspond to history.json’s latest first-parent commit (53aea1f). main advanced afterward; this report describes the published asset snapshot, not the later branch head.",
+      "snapshot_note": "The Pages assets correspond to history.json\u2019s latest first-parent commit (53aea1f). main advanced afterward; this report describes the published asset snapshot, not the later branch head.",
       "progress_json_has_generated_at_field": false,
       "effective_published_time_source": "GitHub Pages Last-Modified response header; exact source commit is recorded separately."
     },
@@ -778,7 +778,7 @@
       "inert_names": "A separate heuristic marks bodies consisting only of discard statements and a limited constant return/throw pattern; it does not change done/todo totals.",
       "shader_counter": "The denominator is tools/rdna_isa.txt, described by the docs as the AMD RDNA 1 + RDNA 2 instruction list. `done` means the decoder recognizes the listed instruction encoding.",
       "history_dates": "History uses `git log --first-parent --format=%H %cs`; one latest first-parent commit per day. Dates are Git short committer dates; do not relabel them as UTC.",
-      "history_recomputation": "The scanner measures historical trees with today’s progress rules and instruction list; history is comparable but not the page as it appeared on each historical date.",
+      "history_recomputation": "The scanner measures historical trees with today\u2019s progress rules and instruction list; history is comparable but not the page as it appeared on each historical date.",
       "page_snapshot_time": "progress.json has no generated_at timestamp. GitHub Pages reports Last-Modified 2026-10-13T10:34:23Z; latest history point is commit 53aea1f, committed 10:33:08Z."
     },
     "progress": {
@@ -8542,7 +8542,7 @@
       },
       {
         "id": "shader-recognition-scope",
-        "finding": "The shader map reaches 1,166/1,166 listed RDNA 1+2 instructions. “Implemented” here means the decoder recognizes an instruction from the project’s list; it does not certify all shader behavior or game compatibility.",
+        "finding": "The shader map reaches 1,166/1,166 listed RDNA 1+2 instructions. \u201cImplemented\u201d here means the decoder recognizes an instruction from the project\u2019s list; it does not certify all shader behavior or game compatibility.",
         "evidence": {
           "recognized": 1166,
           "listed": 1166,
@@ -8575,7 +8575,7 @@
       },
       {
         "id": "history-growth-and-denominator",
-        "finding": "Recomputed history rises from 569/1,694 library functions (33.59%) on Sep 15 to 3,197/3,615 (88.44%) on Oct 13; the denominator also grew. Old trees are remeasured with today’s counting rules, so these points are comparable measurements, not archived versions of what the page displayed on each day.",
+        "finding": "Recomputed history rises from 569/1,694 library functions (33.59%) on Sep 15 to 3,197/3,615 (88.44%) on Oct 13; the denominator also grew. Old trees are remeasured with today\u2019s counting rules, so these points are comparable measurements, not archived versions of what the page displayed on each day.",
         "evidence": {
           "first": {
             "date": "2026-09-15",
@@ -8640,5 +8640,33 @@
       "license_copy": "LICENSE.txt",
       "mapping_manifest": "progress-map-ids.json"
     }
+  },
+  "editorial_revision": {
+    "date": "2026-10-14",
+    "summary": "Expanded reported feature with attributed PR conversation, architecture, participation, and declared AI co-authorship; repository metrics retain the 13 October snapshot.",
+    "sources": [
+      {
+        "url": "https://github.com/boykopovar/AnyPS5/pull/5036#issuecomment-6142287730",
+        "author": "adriadam10",
+        "created_at_utc": "2026-10-13T09:14:15Z",
+        "retrieved_at_utc": "2026-10-14T10:23:57Z",
+        "scope": "collaborator cross-check; not the PR author's original test report"
+      },
+      {
+        "url": "https://github.com/boykopovar/AnyPS5/pull/5036#issuecomment-6142466619",
+        "author": "LeandroLP23",
+        "created_at_utc": "2026-10-13T09:24:44Z",
+        "retrieved_at_utc": "2026-10-14T10:23:57Z",
+        "scope": "separate contributor's Windows two-title report; not the PR author's original test report"
+      },
+      {
+        "url": "https://github.com/boykopovar/AnyPS5/commit/3fe04d4b725f24d699231e2d1ad2aadfcf931857",
+        "scope": "The evidence supports saying this compiled C++ library change and its test were disclosed as AI-assisted, and the commit credits Claude Opus as co-author. It does not establish that an agent independently found the NID, authored the patch end-to-end, ran the tests, or acted autonomously. The exhaustive test results remain attributed to the human PR author and collaborator/contributor comments."
+      },
+      {
+        "url": "https://github.com/boykopovar/AnyPS5/blob/075169f7b3faeae1216efc35df41c44fac9f3190/docs/user/USAGE.md#input-and-conversion",
+        "scope": "Supported static AMD instruction rewriting; x86-64 Mach-O output for Rosetta on Apple silicon."
+      }
+    ]
   }
 }
